@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui_clone/data/data.dart';
 import 'package:instagram_ui_clone/model/models.dart';
+import 'package:instagram_ui_clone/widgets/user_story_post_widget.dart';
 import 'package:instagram_ui_clone/widgets/widget.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -14,7 +15,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     userStories = getStories();
     userPosts = getPosts();
@@ -22,9 +22,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
@@ -41,7 +38,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemCount: userStories.length,
                 scrollDirection: Axis.horizontal,
                 shrinkWrap: true,
-                //physics: NeverScrollableScrollPhysics(),
                 itemBuilder: (context, index) {
                   return UserStoryWidget(
                     imgUrl: userStories[index].imgUrl,
@@ -50,6 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
               ),
             ),
+            Divider(color: Colors.grey, height: 1,),
             Container(
               child: ListView.builder(
                 physics: ClampingScrollPhysics(),

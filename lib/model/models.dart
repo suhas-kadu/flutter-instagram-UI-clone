@@ -1,10 +1,6 @@
-import 'dart:async';
-
-import 'package:flutter/cupertino.dart';
-
 class UserStory {
-    String imgUrl;
-    String userName;
+  String imgUrl;
+  String userName;
 }
 
 class UserPost {
@@ -14,5 +10,4 @@ class UserPost {
   String imgUrl;
   String description;
   String comments;
-
 }
