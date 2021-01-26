@@ -102,3 +102,54 @@ class ProfileScreenAppbar extends StatelessWidget {
     );
   }
 }
+
+class SearchBar extends StatefulWidget {
+  @override
+  _SearchBarState createState() => _SearchBarState();
+}
+
+class _SearchBarState extends State<SearchBar> {
+  TextEditingController _controller = new TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          SizedBox(height: 10),
+          Flexible(
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8),
+              margin: EdgeInsets.only(top: 8, right: 24),
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey.shade200),
+                  color: Colors.grey.shade200,
+                  borderRadius: BorderRadius.circular(8)),
+              child: TextField(
+                controller: _controller,
+                decoration: InputDecoration(
+                    isDense: true,
+                    hintText: "Search",
+                    border: InputBorder.none,
+                    hintStyle: TextStyle(color: Colors.grey),
+                    
+                    icon: Icon(
+                      Icons.search,
+                      color: Colors.grey.shade500,
+                      size: 25,
+                    )),
+              ),
+            ),
+          ),
+          FaIcon(
+            FontAwesomeIcons.instagram,
+            size: 35,
+            color: Colors.black,
+          )
+        ],
+      ),
+    );
+  }
+}
