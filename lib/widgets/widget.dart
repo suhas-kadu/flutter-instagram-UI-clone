@@ -10,24 +10,7 @@ class TitleBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Stack(
-              children: [
-                Container(
-                  width: 25,
-                  height: 25,
-                  decoration: BoxDecoration(
-                      border: Border.all(
-                        width: 2,
-                        color: Colors.black,
-                      ),
-                      borderRadius: BorderRadius.circular(8)),
-                ),
-                Icon(
-                  Icons.add,
-                  color: Colors.black,
-                )
-              ],
-            ),
+            Icon(Icons.add_a_photo, color: Colors.black,),
             //Text("Instagram", style: TextStyle(color: Colors.black, fontSize: 40, fontFamily: 'Billabong',  fontWeight: FontWeight.normal)),
             Image(
                 height: kToolbarHeight - 14,
@@ -39,6 +22,42 @@ class TitleBar extends StatelessWidget {
             ),
           ],
         ));
+  }
+}
+
+class AddRoundedIcon extends StatelessWidget {
+  const AddRoundedIcon({
+    Key key,
+    @required this.bgColor,
+    @required this.fgColor
+  }) : super(key: key);
+
+  final Color bgColor;
+  final Color fgColor;
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        Container(
+          
+          width:25,
+          height: 25,
+          decoration: BoxDecoration(
+              border: Border.all(
+                width: 2,
+                color: Colors.black,
+              ),
+              color: bgColor,
+              borderRadius: BorderRadius.circular(6)),
+        ),
+        Icon(
+          Icons.add,
+          color: fgColor,
+          size: 25,
+        )
+      ],
+    );
   }
 }
 
@@ -145,7 +164,7 @@ class _SearchBarState extends State<SearchBar> {
           ),
           FaIcon(
             FontAwesomeIcons.instagram,
-            size: 35,
+            size: 25,
             color: Colors.black,
           )
         ],
