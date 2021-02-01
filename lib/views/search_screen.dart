@@ -17,16 +17,13 @@ class SearchScreen extends StatelessWidget {
               elevation: 0.0,
               title: SearchBar(),
               bottom: TabBar(
-                
                 indicatorPadding: EdgeInsets.zero,
                 labelColor: Colors.black,
                 physics: ClampingScrollPhysics(),
                 labelStyle: TextStyle(fontWeight: FontWeight.bold),
                 indicatorColor: Colors.white,
                 tabs: [
-                  CustomTab(
-                    label: "IGTV",
-                  ),
+                  CustomTab(label: "IGTV",),
                   CustomTab(label: "Travel"),
                   CustomTab(label: "Architecture"),
                   CustomTab(label: "Decor"),
@@ -57,7 +54,7 @@ class SearchScreen extends StatelessWidget {
                                     MediaQuery.of(context).size.height / 5.4,
                                 width: MediaQuery.of(context).size.width / 3,
                                 image: NetworkImage(
-                                    "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4")),
+                                    "https://images.unsplash.com/photo-1586996157548-baa18d7d358f?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8YWV1NnJMLWo2ZXd8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")),
                             SizedBox(height: 2),
                             Image(
                                 fit: BoxFit.cover,
@@ -65,7 +62,7 @@ class SearchScreen extends StatelessWidget {
                                     MediaQuery.of(context).size.height / 5.4,
                                 width: MediaQuery.of(context).size.width / 3,
                                 image: NetworkImage(
-                                    "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4")),
+                                    "https://images.unsplash.com/photo-1611756674996-fc1b1ed07c9b?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60https://images.unsplash.com/photo-1611756674996-fc1b1ed07c9b?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")),
                           ],
                         ),
                         SizedBox(width: 2),
@@ -76,13 +73,22 @@ class SearchScreen extends StatelessWidget {
                             width:
                                 MediaQuery.of(context).size.width * 2 / 3 - 2,
                             image: NetworkImage(
-                                "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4"))
+                                "https://images.unsplash.com/photo-1502989642968-94fbdc9eace4?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"))
                       ],
                     ),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
+                        Image(
+                            fit: BoxFit.cover,
+                            height:
+                                (MediaQuery.of(context).size.height / 2.7) + 2,
+                            width:
+                                MediaQuery.of(context).size.width * 2 / 3 - 2,
+                            image: NetworkImage(
+                                "https://images.unsplash.com/photo-1577922163167-850ea958ee5e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfFM0TUtMQXNCQjc0fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")),
+                        SizedBox(width: 2),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -92,7 +98,7 @@ class SearchScreen extends StatelessWidget {
                                     MediaQuery.of(context).size.height / 5.4,
                                 width: MediaQuery.of(context).size.width / 3,
                                 image: NetworkImage(
-                                    "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4")),
+                                    "https://images.unsplash.com/photo-1605311121246-8d63e4e2544a?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8X2hiLWRsNFEtNFV8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")),
                             SizedBox(height: 2),
                             Image(
                                 fit: BoxFit.cover,
@@ -100,18 +106,9 @@ class SearchScreen extends StatelessWidget {
                                     MediaQuery.of(context).size.height / 5.4,
                                 width: MediaQuery.of(context).size.width / 3,
                                 image: NetworkImage(
-                                    "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4")),
+                                    "https://images.unsplash.com/photo-1611512056135-d2c6040bb083?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDM4fF9oYi1kbDRRLTRVfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")),
                           ],
                         ),
-                        SizedBox(width: 2),
-                        Image(
-                            fit: BoxFit.cover,
-                            height:
-                                (MediaQuery.of(context).size.height / 2.7) + 2,
-                            width:
-                                MediaQuery.of(context).size.width * 2 / 3 - 2,
-                            image: NetworkImage(
-                                "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4"))
                       ],
                     ),
                   ],
