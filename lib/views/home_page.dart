@@ -6,6 +6,7 @@ import 'package:instagram_ui_clone/views/notificationscreen.dart';
 import 'package:instagram_ui_clone/views/post_screen.dart';
 import 'package:instagram_ui_clone/views/profile_screen.dart';
 import 'package:instagram_ui_clone/views/search_screen.dart';
+import 'package:instagram_ui_clone/widgets/widget.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -48,7 +49,13 @@ class _HomePageState extends State<HomePage> {
               label: "",
               activeIcon: Icon(Icons.search)),
           BottomNavigationBarItem(
-              icon: Icon(Icons.add), label: "", activeIcon: Icon(Icons.add)),
+              icon: AddRoundedIcon(
+                bgColor: Colors.white,
+                fgColor: Colors.black,
+              ),
+              label: "",
+              activeIcon:
+                  AddRoundedIcon(bgColor: Colors.black, fgColor: Colors.white)),
           BottomNavigationBarItem(
               icon: Icon(Icons.favorite_border),
               label: "",
