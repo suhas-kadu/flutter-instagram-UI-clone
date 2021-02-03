@@ -20,19 +20,15 @@ class ProfileScreen extends StatelessWidget {
               children: [
                 HighlightsWidget(
                   imgUrl:
-                      "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4",
+                      "https://www.holidify.com/images/cmsuploads/compressed/Sunset_at_Khadakwasla_dam_pune_20190116141712.jpg",
                   caption: "Khadakwasla",
                 ),
                 HighlightsWidget(
                   imgUrl:
-                      "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4",
+                      "https://s3-ap-southeast-1.amazonaws.com/reacho/post/httpimages/071117/690/img_201704113907555a0194837b21a.jpeg",
                   caption: "Vetal Tekdi",
                 ),
-                HighlightsWidget(
-                  imgUrl:
-                      "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4",
-                  caption: "VIT, Pune",
-                ),
+               
               ],
             ),
             UserProfilePostsWidget()
