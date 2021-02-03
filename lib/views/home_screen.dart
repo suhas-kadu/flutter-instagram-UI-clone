@@ -46,13 +46,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
               ),
             ),
-            Divider(color: Colors.grey, height: 1,),
             Container(
+              height: 0.5,
+              width: MediaQuery.of(context).size.width,
+              color: Colors.grey,
+              padding: EdgeInsets.all(8),
+              margin: EdgeInsets.all(0),
+            ),
+            Container(
+              margin: EdgeInsets.all(0),
+              padding: EdgeInsets.all(0),
               child: ListView.builder(
+                
                 physics: ClampingScrollPhysics(),
                 scrollDirection: Axis.vertical,
                 shrinkWrap: true,
-                padding: EdgeInsets.all(0),
                 itemCount: userPosts.length,
                 itemBuilder: (BuildContext context, int index) {
                   return UserPostWidget(
