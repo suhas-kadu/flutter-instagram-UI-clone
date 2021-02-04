@@ -10,7 +10,10 @@ class TitleBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Icon(Icons.add_a_photo, color: Colors.black,),
+            Icon(
+              Icons.add_a_photo,
+              color: Colors.black,
+            ),
             //Text("Instagram", style: TextStyle(color: Colors.black, fontSize: 40, fontFamily: 'Billabong',  fontWeight: FontWeight.normal)),
             Image(
                 height: kToolbarHeight - 14,
@@ -26,11 +29,9 @@ class TitleBar extends StatelessWidget {
 }
 
 class AddRoundedIcon extends StatelessWidget {
-  const AddRoundedIcon({
-    Key key,
-    @required this.bgColor,
-    @required this.fgColor
-  }) : super(key: key);
+  const AddRoundedIcon(
+      {Key key, @required this.bgColor, @required this.fgColor})
+      : super(key: key);
 
   final Color bgColor;
   final Color fgColor;
@@ -40,8 +41,7 @@ class AddRoundedIcon extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          
-          width:25,
+          width: 25,
           height: 25,
           decoration: BoxDecoration(
               border: Border.all(
@@ -69,7 +69,7 @@ class ProfileScreenAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 30, left: 16, right: 16),
+      margin: EdgeInsets.only(top: 50, left: 16, right: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -153,7 +153,6 @@ class _SearchBarState extends State<SearchBar> {
                     hintText: "Search",
                     border: InputBorder.none,
                     hintStyle: TextStyle(color: Colors.grey),
-                    
                     icon: Icon(
                       Icons.search,
                       color: Colors.grey.shade500,
@@ -167,6 +166,7 @@ class _SearchBarState extends State<SearchBar> {
             size: 25,
             color: Colors.black,
           )
+
         ],
       ),
     );

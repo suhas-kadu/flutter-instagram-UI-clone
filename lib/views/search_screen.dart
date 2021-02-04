@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:instagram_ui_clone/widgets/widget.dart';
 
 class SearchScreen extends StatelessWidget {
@@ -17,13 +18,17 @@ class SearchScreen extends StatelessWidget {
               elevation: 0.0,
               title: SearchBar(),
               bottom: TabBar(
+                unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w700),
+                labelStyle: TextStyle(fontWeight: FontWeight.w700),
                 indicatorPadding: EdgeInsets.zero,
                 labelColor: Colors.black,
                 physics: ClampingScrollPhysics(),
-                labelStyle: TextStyle(fontWeight: FontWeight.bold),
+                unselectedLabelColor: Colors.black,
                 indicatorColor: Colors.white,
                 tabs: [
-                  CustomTab(label: "IGTV",),
+                  CustomTab(
+                    label: "IGTV",
+                  ),
                   CustomTab(label: "Travel"),
                   CustomTab(label: "Architecture"),
                   CustomTab(label: "Decor"),
@@ -114,13 +119,40 @@ class SearchScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Text("data"),
-              Text("data"),
-              Text("data"),
-              Text("data"),
-              Text("data"),
-              Text("data"),
-              Text("data"),
+              Center(child: Text("Couldn't Refresh Feed"),
+              
+              ),
+              // Fluttertoast.showToast(msg: "Couldn't Refresh Feed"),
+              Center(
+                  child: Text(
+                "Couldn't Refresh Feed",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )),
+              Center(
+                  child: Text(
+                "Couldn't Refresh Feed",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )),
+              Center(
+                  child: Text(
+                "Couldn't Refresh Feed",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )),
+              Center(
+                  child: Text(
+                "Couldn't Refresh Feed",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )),
+              Center(
+                  child: Text(
+                "Couldn't Refresh Feed",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )),
+              Center(
+                  child: Text(
+                "Couldn't Refresh Feed",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )),
             ]),
           ),
         ),

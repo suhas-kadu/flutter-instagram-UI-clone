@@ -45,9 +45,9 @@ class _HomePageState extends State<HomePage> {
                 size: 30,
               )),
           BottomNavigationBarItem(
-              icon: Icon(Icons.search),
+              icon: Icon(Icons.search, size: 30,),
               label: "",
-              activeIcon: Icon(Icons.search)),
+              activeIcon: Icon(Icons.search, size: 30,)),
           BottomNavigationBarItem(
               icon: AddRoundedIcon(
                 bgColor: Colors.white,
@@ -61,14 +61,14 @@ class _HomePageState extends State<HomePage> {
               label: "",
               activeIcon: Icon(Icons.favorite)),
           BottomNavigationBarItem(
-              icon: FaIcon(
-                FontAwesomeIcons.userCircle,
-                size: 25,
+              icon: Icon(
+                Icons.account_circle_outlined,
+                size: 30,
               ),
               label: "",
-              activeIcon: FaIcon(
-                FontAwesomeIcons.solidUserCircle,
-                size: 25,
+              activeIcon: Icon(
+                Icons.account_circle,
+                size: 30,
               )),
         ],
         currentIndex: _selectedItem,

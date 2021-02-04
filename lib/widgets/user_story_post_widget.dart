@@ -60,10 +60,11 @@ class UserPostWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(0),
       margin: EdgeInsets.all(0),
+      
       child: Column(
         children: [
           ListTile(
-              contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 0),
+             
               leading: CircleAvatar(
                 backgroundImage: NetworkImage(
                   userAvatar,
@@ -74,17 +75,20 @@ class UserPostWidget extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               subtitle:
-                  Text(userSubtitle, style: TextStyle(color: Colors.black)),
+                  Text(userSubtitle, style: TextStyle(color: Colors.black),
+                  
+                  ),
               trailing: Icon(
                 Icons.more_vert,
                 color: Colors.black,
-              )),
+              ),
+              ),
           Container(
-            height: 400,
+            height: MediaQuery.of(context).size.height/1.7,
             width: MediaQuery.of(context).size.width,
             child: Image(
               image: NetworkImage(imgUrl),
-              fit: BoxFit.fill,
+              fit: BoxFit.cover,
             ),
           ),
           Container(

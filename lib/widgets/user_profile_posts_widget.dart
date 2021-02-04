@@ -9,7 +9,7 @@ class UserProfilePostsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-          child: Container(
+      child: Container(
         height: MediaQuery.of(context).size.height,
         color: Colors.black,
         child: DefaultTabController(
@@ -48,15 +48,22 @@ class UserProfilePostsWidget extends StatelessWidget {
                 crossAxisSpacing: 1,
                 children: [
                   Image(
+                      fit: BoxFit.cover,
                       image: NetworkImage(
-                          "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4")),
+                          "https://images.unsplash.com/photo-1571235853757-68ad8c3be298?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTh8fG5hdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")),
                   Image(
+                      fit: BoxFit.cover,
                       image: NetworkImage(
-                          "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4")),
+                          "https://images.unsplash.com/photo-1500534623283-312aade485b7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")),
                   Image(
+                      fit: BoxFit.cover,
+                      image: NetworkImage(
+                          "https://images.unsplash.com/photo-1470755008296-2939845775eb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHBsYW50c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")),
+                 Image(
+                      fit: BoxFit.cover,
                       image: NetworkImage(
                           "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4")),
-                ],
+                 ],
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
