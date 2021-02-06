@@ -8,6 +8,6 @@ class UserPost {
   String userName;
   String userSubtitle;
   String imgUrl;
-  String description;
+  // String description;
   String comments;
 }

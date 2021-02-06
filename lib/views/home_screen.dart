@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     userSubtitle: userPosts[index].userSubtitle,
                     imgUrl: userPosts[index].imgUrl,
                     userAvatar: userPosts[index].userAvatarImg,
-                    description: userPosts[index].description,
+                    // description: userPosts[index].description,
                     comments: userPosts[index].comments,
                   );
                 },
