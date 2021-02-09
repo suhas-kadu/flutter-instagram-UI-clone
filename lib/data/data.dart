@@ -76,8 +76,8 @@ List<UserPost> getPosts() {
   userPost.userSubtitle = "Pune, Maharashtra";
   userPost.imgUrl =
       "https://avatars2.githubusercontent.com/u/60438083?s=460&u=8b777d70ae095c37b2efc63a5977fbe7f314f053&v=4";
-  userPost.description =
-      "Liked by suhask26 and others\nkadusuhas100 No need of caption!...more";
+  // userPost.description =
+  //     "Liked by suhask26 and others\nkadusuhas100 No need of caption!...more";
   userPost.comments = "View all comments\n30 minutes ago";
   userPosts.add(userPost);
 
@@ -88,8 +88,8 @@ List<UserPost> getPosts() {
   userPost.userSubtitle = "California";
   userPost.imgUrl =
       "https://images.unsplash.com/photo-1501834694136-5c1e87f85fa7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvdXBsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
-  userPost.description =
-      "Liked by suhask26 and others\nuser2010 We are together";
+  // userPost.description =
+  //     "Liked by suhask26 and others\nuser2010 We are together";
   userPost.comments = "View all comments\n50 minutes ago";
   userPosts.add(userPost);
 
@@ -100,8 +100,8 @@ List<UserPost> getPosts() {
   userPost.userSubtitle = "Newyork";
   userPost.imgUrl =
       "https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
-  userPost.description =
-      "Liked by user2009 and others\nuser2012 Too much work!!!";
+  // userPost.description =
+      // "Liked by user2009 and others\nuser2012 Too much work!!!";
   userPost.comments = "View all comments\n55 minutes ago";
   userPosts.add(userPost);
 
